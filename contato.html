@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Loja de Eletrônicos Online - Contato</title>
 </head>
+
 <body>
-        <header>
+    <header>
         <h1>Loja de Eletrônicos Online</h1>
         <nav>
             <ul>
@@ -16,5 +17,78 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section>
+            <h2>Entre em Contato Conosco</h2>
+            <p>Preencha o formulário abaixo para enviar suas dúvidas, sugestões ou reclamações.</p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Formulário de Contato</legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="nome">Nome Completo:</label></td>
+                                <td><input type="text" id="nome" name="nome" placeholder="Digite seu nome completo"
+                                        required autofocus maxlength="100"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email">E-mail:</label></td>
+                                <td><input type="email" id="email" name="email" placeholder="seuemail@exemplo.com"
+                                        required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="telefone">Telefone (Celular):</label></td>
+                                <td><input type="tel" id="telefone" name="telefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
+                                        title="Formato: 11 99999-9999" placeholder="11 99999-9999"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="data_nasc">Data de Nascimento:</label></td>
+                                <td><input type="date" id="data_nasc" name="data_nasc" min="1900-01-01" max="2026-12-31"
+                                        required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="cor_produto">Cor Preferida do Produto:</label></td>
+                                <td><input type="color" id="cor_produto" name="cor_produto" value="#000000"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="avaliacao">Avalie nossa Loja:</label></td>
+                                <td><input type="number" id="avaliacao" name="avaliacao" min="1" max="5"
+                                        placeholder="1 a 5"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Preferencia de Contato:</label></td>
+                                <td>
+                                    <input type="radio" id="pref_email" name="preferencia" value="email" checked>
+                                    <label for="pref_email">E-mail</label>
+                                    <br>
+                                    <input type="radio" id="pref_tel" name="preferencia" value="telefone">
+                                    <label for="pref_tel">Telefone</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="website">Seu Website:</label></td>
+                                <td><input type="url" id="website" name="website" placeholder="https://seusite.com.br">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="termos">Aceito os termos e condições:</label></td>
+                                <td><input type="checkbox" id="termos" name="termos" required></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <br>
+                                    <button type="submit">Enviar Mensagem</button>
+                                    <button type="reset">Limpar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
