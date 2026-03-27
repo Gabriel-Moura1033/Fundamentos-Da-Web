@@ -1,54 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loja de Eletrônicos Online - Home</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Loja de Eletrônicos Online</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+      <h1>Loja de Eletrônicos Online</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
     </header>
-    <h1>Bem-vindo à Loja de Eletrônicos Online</h1>
 
-    <p>
-        Nossa <strong>Loja de Eletrônicos Online</strong> oferece os melhores produtos em tecnologia,
-        com qualidade, inovação e preços competitivos.
-    </p>
+    <main>
+      <h1 class="page-title">Bem-vindo à Loja de Eletrônicos Online</h1>
 
-    <h2>Principais categorias</h2>
+      <section>
+        <p>
+          Nossa <strong>Loja de Eletrônicos Online</strong> oferece os melhores
+          produtos em tecnologia, com qualidade, inovação e preços competitivos.
+        </p>
+      </section>
 
-    <ul>
-        <li>Smartphones</li>
-        <li>Notebooks</li>
-        <li>Acessórios eletrônicos</li>
-    </ul>
+      <section>
+        <h2>Principais categorias</h2>
+        <ul class="category-list">
+          <li>Smartphones</li>
+          <li>Notebooks</li>
+          <li>Acessórios eletrônicos</li>
+        </ul>
+      </section>
 
-    <h2>Produto em Destaque</h2>
+      <section>
+        <h2>Produto em Destaque</h2>
+        <div class="media-container">
+          <img src="imagens/notebook.jpg" alt="Notebook" width="500" />
+        </div>
+        <p style="text-align: center">
+          Notebooks de alto desempenho para trabalho, estudo e entretenimento.
+        </p>
+      </section>
 
-    <img src="imagens/notebook.jpg" alt="Notebook" width="300">
+      <section>
+        <h2>Conheça nossa loja</h2>
+        <div class="media-container">
+          <video width="600" controls>
+            <source
+              src="videos/apresentacao_eletronicos.mp4"
+              type="video/mp4"
+            />
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+      </section>
+    </main>
 
-    <p>
-        Notebooks de alto desempenho para trabalho, estudo e entretenimento.
-    </p>
-
-    <h2>Conheça nossa loja</h2>
-
-    <video width="400" controls>
-        <source src="videos/apresentacao_eletronicos.mp4" type="video/mp4">
-        Seu navegador não suporta vídeo.
-    </video>
-
-    <hr>
-
-
-  
-
-</body>
+    <footer>
+      <p>
+        &copy; 2026 Loja de Eletrônicos Online. Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
 </html>
